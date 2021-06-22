@@ -1,0 +1,105 @@
+.container{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "dis dis dis dis"
+    "AC C div times"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal"
+;
+    border-radius: 5px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+.paddButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: gray;
+    color: #ffff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 20px;
+}
+.paddButton:hover{
+    border: 1px solid green;
+    color: #ccc;
+}
+.total{
+    padding: 5px 20px;
+    color: yellow;
+}
+.dark-gray{
+    background-color: #333;
+}
+.dis{
+    grid-area: dis;
+    background-color: black;
+    text-align: right;
+    font-size: 20px;
+}
+input{
+    width: 100%;
+    color: white;
+    padding: 5px 20px;
+    text-align: right;
+    background-color: black;
+}
+input::placeholder{
+    color: white;
+}
+.zero{
+    grid-area: zero;
+}
+.equal{
+    grid-area: equal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and  (max-width: 768px) {
+    #quote-box{
+        width: 100%;
+    }
+}*/
+/*.row{
+    margin-top:2rem;
+}
+.input, .output{
+    border-radius: 13px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    height: 80vh;
+}
+textarea{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}*/
